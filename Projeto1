@@ -1,0 +1,46 @@
+# ai_content_generator.py
+
+def generate_portfolio_content_ideas(topic, creativity_level="medium"):
+    """
+    Simula a geração de ideias de conteúdo para portfólio baseadas em um tópico
+    e nível de criatividade.
+
+    Args:
+        topic (str): O tema principal para as ideias de conteúdo (ex: "Desenvolvimento Web", "Data Science").
+        creativity_level (str): Nível de criatividade (low, medium, high).
+
+    Returns:
+        list: Uma lista de strings com ideias de conteúdo.
+    """
+
+    base_ideas = [
+        f"Artigo: As 5 tendências mais quentes em {topic} para 2025.",
+        f"Projeto: Estudo de caso interativo sobre um projeto de {topic}.",
+        f"Infográfico: Guia visual rápido sobre conceitos chave em {topic}.",
+        f"Vídeo: Tutorial passo a passo de uma ferramenta em {topic}.",
+        f"Postagem em blog: Meu processo de aprendizado em {topic}.",
+    ]
+
+    if creativity_level == "medium":
+        base_ideas.extend([
+            f"Webinar: Desmistificando {topic}: um workshop prático.",
+            f"Podcast: Entrevista com um especialista em {topic}.",
+        ])
+    elif creativity_level == "high":
+        base_ideas.extend([
+            f"Série de posts: Desafios e soluções avançadas em {topic}.",
+            f"Ebook: Guia completo para iniciantes em {topic}.",
+            f"Ferramenta interativa: Calculadora de métricas para {topic}.",
+        ])
+
+    print(f"Gerando ideias de conteúdo para: '{topic}' (Criatividade: {creativity_level})...\n")
+    for i, idea in enumerate(base_ideas):
+        print(f"{i+1}. {idea}")
+
+    return base_ideas
+
+if __name__ == "__main__":
+    print("--- Gerador de Ideias para Portfólio com IA Fictícia ---")
+    generate_portfolio_content_ideas("Machine Learning", "high")
+    print("\n--- Outro Exemplo ---")
+    generate_portfolio_content_ideas("UX/UI Design", "medium")
