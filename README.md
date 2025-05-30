@@ -1,4 +1,4 @@
-# AI Portfolio Content Generator
+
 
 Bem-vindo ao repositório `ai-portfolio-hub`! Este projeto contém um script Python simples que simula a geração de ideias de conteúdo para um portfólio digital, utilizando um conceito fictício de "IA" para inspirar a criação.
 
